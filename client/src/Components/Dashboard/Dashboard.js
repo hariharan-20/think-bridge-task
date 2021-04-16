@@ -1,7 +1,9 @@
 import React, {useEffect , useState} from 'react'
 import axios from 'axios'
 import { Container, Row, Col, Button } from 'react-bootstrap'
+import { useHistory } from 'react-router'
 import './Dashboard.css'
+
 import FormModal from '../Modal/FormModal'
 import {GrEdit} from 'react-icons/gr'
 import {RiDeleteBin6Fill} from 'react-icons/ri' 
@@ -10,10 +12,11 @@ const Dashboard = () => {
     const [isOpen, setIsOpen] = useState(false)
     const [data, setData] = useState()
     const [EditData, setEditData] = useState()
+    const history = useHistory()    
 
     const getData = async () => await axios.get('http://localhost:8080/GetAll')
         .then( res => {
-            console.log(res)
+            // console.log(res)
             setData(res.data.data)
         })
         .catch( err => {
@@ -22,7 +25,8 @@ const Dashboard = () => {
 
     const DelData = async (id) => await axios.post('http://localhost:8080/Delete', {id: id})
         .then( res => {
-            console.log(res)
+            // console.log(res)
+            window.alert('Deleted Successfully')
             getData()
         })
         .catch( err => {
@@ -45,7 +49,10 @@ const Dashboard = () => {
 
     return (        
         <div className='Dashboard'>
-            <div className='title'>Think Bridge Inventory</div>
+            <div style={{ display: 'flex', width: '100%', justifyContent: 'space-around'}}>
+                <div className='title'>Think Bridge Inventory</div>
+                <div className='LogoutBtnDiv'><Button className='LogoutBtn' onClick={() => history.push('/')}>Logout</Button></div>
+            </div>
             <Container fluid>
                 <Row>
                     <Col md={1} className='RowHeader'>S.No</Col>

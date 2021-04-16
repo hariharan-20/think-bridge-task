@@ -70,7 +70,7 @@ const FormModal = ({isOpen, setIsOpen, data, setData}) => {
             <Modal.Body>
                 <div className='InputDiv'><input className='formInput' placeholder='Name' name='name' onChange={(e) => handleChange(e)} value={formData.name} /></div>
                 <div className='InputDiv'><input className='formInput' placeholder='Description' name='description' onChange={(e) => handleChange(e)} value={formData.description}/></div>
-                <div className='InputDiv'><input className='formInput' placeholder='Quantity' name='quantity' onChange={(e) => handleChange(e)} value={formData.quantity}/></div>
+                <div className='InputDiv'><input className='formInput' placeholder='Quantity' type='number' name='quantity' onChange={(e) => handleChange(e)} value={formData.quantity}/></div>
                 <div className='InputDiv'><input className='formInput' placeholder='Price' name='price' onChange={(e) => handleChange(e)}  value={formData.price}/></div>
             </Modal.Body>
             <Modal.Footer>

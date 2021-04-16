@@ -3,6 +3,8 @@
     font-size: 25px;
     font-weight: 600;    
     padding: 2%;
+    width: 60%;
+    text-align: end;
 }
 
 .RowHeader {
@@ -73,4 +75,10 @@
 .ActionBtn:hover {
     background-color: #F4F6F6;
     border-color: #AFB2B3;
+}
+
+.LogoutBtnDiv{
+    padding: 2%;
+    width: 30%;
+    text-align: end;
 }

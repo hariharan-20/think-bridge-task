@@ -1,0 +1,13 @@
+.InputDiv {
+    padding: 1%;
+    text-align: center;
+}
+
+.modal-footer {
+    justify-content: center;
+
+}
+
+.formInput {
+    border-radius: 4px;
+}

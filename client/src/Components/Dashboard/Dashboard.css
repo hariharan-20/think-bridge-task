@@ -1,0 +1,76 @@
+.title {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;    
+    padding: 2%;
+}
+
+.RowHeader {
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    padding: 1%;    
+}
+
+.RowData {
+    text-align: center;
+    font-size: 16px;
+    padding: 1%;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active, 
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:focus{    
+    box-shadow: none;
+}
+
+.AddBtn:hover, .AddBtn:focus {
+    background-color: #12924F;
+    opacity: 0.8;
+}
+
+.BtnDiv {
+    padding: 1%;
+    justify-content: center;
+}
+
+.AddBtn {
+    width: 6%;
+    border-radius: 4px;
+    background: #12924F;
+    border: transparent;    
+}
+
+.EditBtn {
+    /* width: 6%; */
+    border-radius: 4px;
+    /* background: #12924F; */
+    border: transparent;    
+}
+
+.ButtonDiv{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ActionBtn{
+    background-color: transparent;
+    color: black;
+    border:none;
+    height: 40px;
+
+}
+
+.ActionBtn:not(:disabled):not(.disabled):active,
+.ActionBtn:not(:disabled):not(.disabled):active:focus,
+.ActionBtn:focus {
+    box-shadow: #AFB2B3 1px;
+    background-color: transparent;
+    color: black;
+    
+}
+
+.ActionBtn:hover {
+    background-color: #F4F6F6;
+    border-color: #AFB2B3;
+}
